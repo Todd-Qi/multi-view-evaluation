@@ -44,4 +44,5 @@ sh eval_training.sh
 
 #### Where to download the GT point cloud
 https://www.eth3d.net/datasets#high-res-multi-view
+
 Download all ground truth (for evaluation) (1.8GB)
