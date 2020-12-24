@@ -27,3 +27,21 @@ Description of optional program arguments:
 * `--beam_divergence_halfangle_deg` (default 0.011): Beam divergence for free-space modeling.
 * `--completeness_cloud_output_path` (default ""): If set to a path, completeness visualizations for each tolerance value are written to `<path>.tolerance_<tolerance>.ply`.
 * `--accuracy_cloud_output_path` (default ""): If set to a path, accuracy visualizations for each tolerance value are written to `<path>.tolerance_<tolerance>.ply`.
+
+### How to use (Update 2020.12.24)
+#### Compile the source code
+```
+mkdir build && cd build
+cmake ..
+make -j
+```
+
+#### Perform Evaluation
+```
+cd scripts
+sh eval_training.sh
+```
+
+#### Where to download the GT point cloud
+https://www.eth3d.net/datasets#high-res-multi-view
+Download all ground truth (for evaluation) (1.8GB)
